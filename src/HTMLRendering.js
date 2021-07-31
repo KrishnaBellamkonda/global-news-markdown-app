@@ -77,7 +77,7 @@ function createHTMLResponse(obj_1, obj_2){
         <div class='articles' xmlns='http://www.w3.org/1999/xhtml'>
             <section class='container' >
                 <a href='${link_1}' xmlns='https://www.w3.org/1999/xlink'><h2>${title_1}</h2></a>
-                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlinkk'><img src='${img_1}' alt='article1' ></a>
+                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlinkk'><img src='${img_1}' alt='article1' ></img></a>
                 <article>
                 ${abstract_1}
                 </article>
@@ -86,7 +86,7 @@ function createHTMLResponse(obj_1, obj_2){
             <section class='container'>         
                 <a href='${link_2}' xmlns='https://www.w3.org/1999/xlink'><h2>${title_2}</h2></a>
                 <a href='${link_2}' xmlns='https://www.w3.org/1999/xlink'>
-                    <img src='${img_2}' alt='article2'>
+                    <img src='${img_2}'</img> alt='article2'>
                 </a>
                 <article>
                 ${abstract_2}
@@ -96,9 +96,6 @@ function createHTMLResponse(obj_1, obj_2){
         </div>
     </foreignObject>    
 </svg>
-
-
-
     `
     return newsSection
 
