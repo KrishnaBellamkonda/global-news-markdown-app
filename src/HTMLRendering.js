@@ -75,11 +75,11 @@ function createHTMLResponse(obj_1, obj_2){
     </style>
     <foreignObject width='100%' height='100%'>
         <div class='articles' xmlns='http://www.w3.org/1999/xhtml'>
-            <section class='container'>
+            <section class='container' >
                 <header>
-                    <a href=${link_1}><h2>${title_1}</h2></a>
+                    <a href=${link_1} xmlns='https://www.w3.org/1999/xlink'><h2>${title_1}</h2></a>
                 </header>
-                <a href=${link_1}><img src=${img_1} alt='' ></a>
+                <a href=${link_1} xmlns='https://www.w3.org/1999/xlinkk'><img src=${img_1} alt='article1' ></a>
                 <article>
                    ${abstract_1}
                 </article>
@@ -87,10 +87,10 @@ function createHTMLResponse(obj_1, obj_2){
             </section>
             <section class='container'>
                 <header>           
-                    <a href=${link_2}><h2>${title_2}</h2></a>
+                    <a href=${link_2} xmlns='https://www.w3.org/1999/xlink'><h2>${title_2}</h2></a>
                 </header>
-                <a href=${link_2}>
-                    <img src=${img_2} alt=''>
+                <a href=${link_2} xmlns='https://www.w3.org/1999/xlink'>
+                    <img src=${img_2} alt='article2'>
                 </a>
                 <article>
                    ${abstract_2}
@@ -100,11 +100,6 @@ function createHTMLResponse(obj_1, obj_2){
         </div>
     </foreignObject>    
 </svg>
-
-
-
-    
-    
     `
     return newsSection
 
