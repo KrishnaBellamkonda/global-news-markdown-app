@@ -30,6 +30,8 @@ function createHTMLResponse(obj_1, obj_2){
     const newsSection = `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800px">
 <foreignObject>
+    <polygon points="5,5 195,10 185,185 10,195" />
+
 <div class="fonts-style" xmlns="http://www.w3.org/1999/xhtml">
     <div class="fonts-style">
     <style>
