@@ -28,6 +28,8 @@ function createHTMLResponse(obj_1, obj_2){
 
     // HTML rendering 
     const newsSection = `
+<svg xmlns="http://www.w3.org/2000/svg">
+<foreignObject>
 <div class="fonts-style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +123,8 @@ section {
     </section>
     </div>
 </div>
-    
+</foreignObject>    
+</svg>
 
 
 
