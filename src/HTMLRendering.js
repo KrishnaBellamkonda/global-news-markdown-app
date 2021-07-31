@@ -73,7 +73,7 @@ function createHTMLResponse(obj_1, obj_2){
             padding-inline: 2rem;
         }
     </style>
-                    <img src='${img_1}' alt='article1' ></img>
+                    <image src='${img_1}' alt='article1' ></image>
     <foreignObject width='100%' height='100%'>
         <div class='articles' xmlns='http://www.w3.org/1999/xhtml'>
             <section class='container' >
