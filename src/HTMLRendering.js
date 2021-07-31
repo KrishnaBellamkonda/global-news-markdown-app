@@ -73,11 +73,13 @@ function createHTMLResponse(obj_1, obj_2){
             padding-inline: 2rem;
         }
     </style>
+                    <img src='${img_1}' alt='article1' ></img>
     <foreignObject width='100%' height='100%'>
         <div class='articles' xmlns='http://www.w3.org/1999/xhtml'>
             <section class='container' >
                 <a href='${link_1}' xmlns='https://www.w3.org/1999/xlink'><h2>${title_1}</h2></a>
-                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlinkk'><img src='${img_1}' alt='article1' ></img></a>
+                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlinkk'>
+                </a>
                 <article>
                 ${abstract_1}
                 </article>
