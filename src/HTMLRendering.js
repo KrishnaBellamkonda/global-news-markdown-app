@@ -30,7 +30,7 @@ function createHTMLResponse(obj_1, obj_2){
     const newsSection = `
     <svg xmlns='http://www.w3.org/2000/svg' fill='none' width='100vw' height='70vh'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <style>
             * {
