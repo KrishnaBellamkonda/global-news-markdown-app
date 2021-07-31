@@ -1,1 +1,1 @@
-node ./src/updateData.js
+node ./dist/index.js

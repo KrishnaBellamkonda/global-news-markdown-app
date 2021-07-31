@@ -4,7 +4,8 @@
   "description": "sends global news as response",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-build": "ncc build ./src/updateData.js -o dist"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "@vercel/node": "^1.11.1"
   },
   "dependencies": {
+    "@vercel/ncc": "^0.29.0",
     "node-fetch": "^2.6.1"
   }
 }
