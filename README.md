@@ -2,6 +2,7 @@
 A vercel app that serves random news articles as response to API request.
 
 <img src='https://global-news-markdown-app-le4tw19st-krishnabellamkonda.vercel.app/' />
+
 ![SVG](https://global-news-markdown-app-le4tw19st-krishnabellamkonda.vercel.app/)
 
 <!-- HTML -->
