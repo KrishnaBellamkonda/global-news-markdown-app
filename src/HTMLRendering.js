@@ -31,13 +31,7 @@ function createHTMLResponse(obj_1, obj_2){
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800px">
 <foreignObject>
 <div class="fonts-style" xmlns="http://www.w3.org/1999/xhtml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <div class="fonts-style">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
     <style>
 
     * {
@@ -125,7 +119,6 @@ section {
 </div>
 </foreignObject>    
 </svg>
-
 
 
 `
