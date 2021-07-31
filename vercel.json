@@ -1,0 +1,19 @@
+{
+
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/api/articles.js"
+        }, 
+        {
+            "src":"/articles", 
+            "methods":[
+                "POST", 
+                "GET"
+            ], 
+            "dest":"/api/articles.js"
+        }
+    ]
+
+
+}
