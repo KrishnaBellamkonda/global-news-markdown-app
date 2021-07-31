@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 
 // CONSTANTS
-const DATA_PATH = "./data/world.json"
+const DATA_PATH = "./src/data/world.json"
 
 // Fetch Functions 
 async function fetchData(){
