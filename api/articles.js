@@ -47,8 +47,8 @@ function getRadnomizedArticles(results, n_indices=2){
 
 module.exports = async (req, res)=>{
     const articles = await completeAPI()
-    res.setHeader('Content-Type', 'image/svg+xml');
-    // res.setHeader('Content-Type', 'text/html');
+    // res.setHeader('Content-Type', 'image/svg+xml');
+    res.setHeader('Content-Type', 'text/html');
     res.send(articles)
 
 }
