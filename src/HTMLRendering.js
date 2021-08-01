@@ -18,8 +18,7 @@ function getObject(apiRes){
     return obj
 }
 
-function createHTMLResponse(obj_1, obj_2, textColor="black", bgColor="white", 
-                            borderColor="rgb(218, 218, 218)", headingColor="rgb(30, 5, 141)")
+function createHTMLResponse(obj_1, obj_2, bgColor, textColor, headingColor, borderColor)
             {
 
 
@@ -122,12 +121,12 @@ function createHTMLResponse(obj_1, obj_2, textColor="black", bgColor="white",
 
 }
 
-function htmlWorkflow(articles){
+function htmlWorkflow(articles, bgColor, textColor, headingColor, borderColor){
     let [obj1, obj2] = articles.map(item=>{
     if(!(typeof item === "undefined"))   
         return getObject(item)
     })
-    let html = createHTMLResponse(obj1, obj2)
+    let html = createHTMLResponse(obj1, obj2, bgColor, textColor, headingColor, borderColor)
     return html
 }
 
