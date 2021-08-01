@@ -104,7 +104,7 @@ function createHTMLResponse(obj_1, obj_2){
             <header>
                 <a href='${link_1}>'<h2>${title_1}</h2></a>
             </header>
-            <a href='${link_1}''><img src='${img_1}' alt="" ></a>
+            <a href='${link_1}'><img src='${img_1}' alt="" ></a>
             <article>
                ${abstract_1}
             </article>
@@ -129,7 +129,6 @@ function createHTMLResponse(obj_1, obj_2){
     </svg>
     
     
-
 `
     return newsSection
 
