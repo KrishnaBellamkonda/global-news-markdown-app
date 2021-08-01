@@ -109,9 +109,9 @@ section {
     <section class="container">
         <div class='circle'></div>
         <header>
-            <a href=${link_1}><h2>${title_1}</h2></a>
+            <a href='${link_1}'><h2>'${title_1}'</h2></a>
         </header>
-        <a href=${link_1}><img src=${img_1} alt="" ></a>
+        <a href='${link_1}'><img src='${img_1}' alt="" ></a>
         <article>
            ${abstract_1}
         </article>
@@ -121,9 +121,9 @@ section {
     <section class="container">
         <div class='circle'></div>
         <header>           
-            <a href=${link_2}><h2>${title_2}</h2></a>
+            <a href='${link_2}'><h2>'${title_2}'</h2></a>
         </header>
-        <a href=${link_2}><img src=${img_2} alt=""></a>
+        <a href='${link_2}'><img src='${img_2}' alt=""></a>
 
         <article>
            ${abstract_2}
