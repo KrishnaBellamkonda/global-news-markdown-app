@@ -27,41 +27,30 @@ function createHTMLResponse(obj_1, obj_2){
 
 
     // HTML rendering 
-    const newsSection = `
-<svg xmlns="http://www.w3.org/2000/svg"  width="800px" height="800px">
-    <foreignObject>
-        <div class="fonts-style" xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-        
+    const newsSection = `    <svg xmlns='http://www.w3.org/2000/svg' fill='none' width='100vw' height='70vh'>
+        <style>
             * {
             font-family: 'Poppins', sans-serif;
             padding: 0;
             margin: 0;
-        
         }
-        
         .container {
             max-width: clamp(200px, 70%, 700px);
             margin: 0 auto;
         }
-        
         img {
             width: 100%;
             max-height: clamp(250px, 30%, 400px);
         }
-        
         h2 {
             font-size: 1.6rem;
             line-height: 1.2em;
             margin-block-end: 1rem;
         }
-        
-        
         a {
             text-decoration:none;
             color:rgb(30, 5, 141);
         }
-        
         .articles {
             display: flex;
             flex-direction: column;
@@ -69,63 +58,43 @@ function createHTMLResponse(obj_1, obj_2){
             margin-block-start: 1rem;
             margin-block-end: 1rem;
         }
-        
         section {
             display: flex;
             flex-direction: column;
         }
-        
         article {
             font-size: 1rem;
             line-height: 1.6em;
             margin-block-start: 1rem;
         }
-        
         section {
             border-inline: 1px solid rgb(218, 218, 218);
             padding-inline: 2rem;
         }
-        
-        
-        .circle {
-            background-color:violet;
-            z-index:-1;
-            width:200px;
-            height:200px;
-            border-radius:50%;
-        }
-            </style>
-            
-            <div class="articles">
-                <section class="container">
-                    <div class='circle'></div>
-                    <header>
-                        <a href='${link_1}>'<h2>${title_1}</h2></a>
-                    </header>
-                    <a href='${link_1}'></a>
-                    <article>
-                    ${abstract_1}
-                    </article>
-                    <p>${byline_1}</p>
-                </section>
-            
-                <section class="container">
-                    <div class='circle'></div>
-                    <header>           
-                        <a href='${link_2}'><h2>${title_2}</h2></a>
-                    </header>
-                    <a href='${link_2}'></a>
-            
-                    <article>
-                    ${abstract_2}
-                    </article>
-                    <p>${byline_2}</p>
-                </section>
-            </div>
+    </style>
+    <foreignObject width='100%' height='100%'>
+        <div class='articles' xmlns='http://www.w3.org/1999/xhtml'>
+            <section class='container' >
+                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlink'><h2>${title_1}</h2></a>
+                <a href='${link_1}' xmlns='https://www.w3.org/1999/xlinkk'>
+                </a>
+                <article>
+                ${abstract_1}
+                </article>
+                <p>${byline_1}</p>
+            </section>
+            <section class='container'>         
+                <a href='${link_2}' xmlns='https://www.w3.org/1999/xlink'><h2>${title_2}</h2></a>
+                <a href='${link_2}' xmlns='https://www.w3.org/1999/xlink'>
+                </a>
+                <article>
+                ${abstract_2}
+                </article>
+                <p>${byline_2}</p>
+            </section>
         </div>
     </foreignObject>    
-    </svg>
-    
+</svg>
     
 `
     return newsSection
@@ -162,3 +131,6 @@ function getRadnomizedArticles(n_indices=2){
 exports.createHTMLResponse = createHTMLResponse
 exports.getObject = getObject
 exports.htmlWorkflow = htmlWorkflow
+
+
+
