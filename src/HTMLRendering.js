@@ -75,6 +75,8 @@ function createHTMLResponse(obj_1, obj_2, textColor="black", bgColor="white",
         gap: 2rem;
         margin-block-start: 1rem;
         margin-block-end: 1rem;
+        
+        flex-grow:1;
     }
     section {
         display: flex;
