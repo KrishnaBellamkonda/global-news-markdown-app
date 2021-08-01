@@ -8,17 +8,10 @@ function getObject(apiRes){
     return obj
 }
 
-function getObject(apiRes){
-    const obj = {}
-    obj["title"] = apiRes["title"] || "No-title"
-    obj["url"] = apiRes["url"] || "No-url"
-    obj["img"] = apiRes["multimedia"][0]["url"]  || "No-img"
-    obj["abstract"] = apiRes["abstract"] || "No-abstract"
-    obj["byline"] = apiRes["byline"] || "No-Byline"
-    return obj
-}
 
-function createHTMLResponse(obj_1, obj_2, bgColor, textColor, headingColor, borderColor)
+function createHTMLResponse(obj_1, obj_2, bgColor = "white", 
+textColor =  "black", headingColor = "rgb(30, 5, 141)", borderColor =  "rgb(218, 218, 218)"
+)
             {
 
 
@@ -53,7 +46,7 @@ function createHTMLResponse(obj_1, obj_2, bgColor, textColor, headingColor, bord
 
     .container {
         max-width: clamp(200px, 70%, 700px);
-        margin: 0 auto;
+        margin: 0 50px;
     }
     img {
         width: 100%;
@@ -63,6 +56,8 @@ function createHTMLResponse(obj_1, obj_2, bgColor, textColor, headingColor, bord
         font-size: 1.6rem;
         line-height: 1.2em;
         margin-block-end: 1rem;
+        color:${headingColor};
+
     }
     a {
         text-decoration:none;
@@ -121,43 +116,13 @@ function createHTMLResponse(obj_1, obj_2, bgColor, textColor, headingColor, bord
 
 }
 
+
 function htmlWorkflow(articles, bgColor, textColor, headingColor, borderColor){
     let [obj1, obj2] = articles.map(item=>{
     if(!(typeof item === "undefined"))   
         return getObject(item)
     })
     let html = createHTMLResponse(obj1, obj2, bgColor, textColor, headingColor, borderColor)
-    return html
-}
-
-function getRandomIndices(max, n_indices = 2){
-    var arr = [];
-    while(arr.length < n_indices){
-        var r = Math.floor(Math.random() * max) + 1;
-        if(arr.indexOf(r) === -1) arr.push(r);
-    }
-    return (arr);
-}
-
-function getRadnomizedArticles(n_indices=2){
-    let data = require('./data/world.json')
-    let results = data["results"]
-    let length = results.length
-    let randomIndices = getRandomIndices(length, n_indices)
-    let reqArticles = randomIndices.map((index)=> results[index])
-    return reqArticles
-}
-
-exports.createHTMLResponse = createHTMLResponse
-exports.getObject = getObject
-exports.htmlWorkflow = htmlWorkflow
-
-function htmlWorkflow(articles){
-    let [obj1, obj2] = articles.map(item=>{
-    if(!(typeof item === "undefined"))   
-        return getObject(item)
-    })
-    let html = createHTMLResponse(obj1, obj2)
     return html
 }
 
