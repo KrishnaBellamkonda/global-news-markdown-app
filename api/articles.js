@@ -48,13 +48,18 @@ function getRadnomizedArticles(results, n_indices=2){
 module.exports = async (req, res)=>{
     
     // Get the colors from request 
-    const body = req.body 
-    
+    const body = req.query 
     const bgColor = body.bgColor || "white"
     const textColor = body.textColor || "black"
     const headingColor = body.headingColor || "rgb(30, 5, 141)"
     const borderColor = body.borderColor || "rgb(218, 218, 218)"
     
+    console.log("bgColor:", bgColor)
+    console.log("textColor:", textColor)
+    console.log("headingCOlor:", headingColor)
+    console.log("borderCOlor:", borderColor)
+    console.log("*********************")
+
     const articles = await completeAPI(bgColor, textColor, headingColor, borderColor)
     res.setHeader('Content-Type', 'image/svg+xml');
     res.send(articles)
