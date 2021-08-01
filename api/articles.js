@@ -10,10 +10,10 @@ async function getData(url=URL){
 
 }
 
-async function completeAPI(){
+async function completeAPI(bgColor, textColor, headingColor, borderColor){
     const data = await getData();
     const random = getRadnomizedArticles(data['results'])
-    const html = htmlWorkflow(random)
+    const html = htmlWorkflow(random, bgColor, textColor, headingColor, borderColor)
     return html
 }
 
@@ -46,7 +46,16 @@ function getRadnomizedArticles(results, n_indices=2){
 }
 
 module.exports = async (req, res)=>{
-    const articles = await completeAPI()
+    
+    // Get the colors from request 
+    const body = req.body 
+    
+    const bgColor = body.bgColor || "white"
+    const textColor = body.textColor || "black"
+    const headingColor = body.headingColor || "rgb(30, 5, 141)"
+    const borderColor = body.borderColor || "rgb(218, 218, 218)"
+    
+    const articles = await completeAPI(bgColor, textColor, headingColor, borderColor)
     res.setHeader('Content-Type', 'image/svg+xml');
     res.send(articles)
 
