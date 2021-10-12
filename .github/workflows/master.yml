@@ -29,7 +29,7 @@ jobs:
           git pull origin master
           .\updateData.bat
         env:
-          KEY: ${{secrets.TOKEN}}
+          KEY: ${{secrets.KEY}}
     
       - name: Commit & Push changes
         uses: actions-js/push@master
